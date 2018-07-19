@@ -957,3 +957,5 @@ components:
         timestamp:
           description: Error timestamp.
           type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"

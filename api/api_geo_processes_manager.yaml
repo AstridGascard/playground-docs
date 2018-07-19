@@ -1272,17 +1272,17 @@ components:
         - creationDate
       properties:
         creationDate:
-          type: integer
-          format: int64
-          example: 1522067881
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         startDate:
-          type: integer
-          format: int64
-          example: 1522067882
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         endDate:
-          type: integer
-          format: int64
-          example: 1522067883
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         processId:
           type: string
           example: 15c61933-0b06-442c-8bab-723b2b41f570
@@ -1311,17 +1311,17 @@ components:
         - status
       properties:
         creationDate:
-          type: integer
-          format: int64
-          example: 1522067881
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         startDate:
-          type: integer
-          format: int64
-          example: 1522067882
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         endDate:
-          type: integer
-          format: int64
-          example: 1522067883
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         processId:
           type: string
           example: 15c61933-0b06-442c-8bab-723b2b41f570
@@ -1421,17 +1421,17 @@ components:
         - status
       properties:
         creationDate:
-          type: integer
-          format: int64
-          example: 1522067881
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         startDate:
-          type: integer
-          format: int64
-          example: 1522067882
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         endDate:
-          type: integer
-          format: int64
-          example: 1522067883
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         processId:
           type: string
           example: 15c61933-0b06-442c-8bab-723b2b41f570
@@ -1474,17 +1474,17 @@ components:
         - creationDate
       properties:
         creationDate:
-          type: integer
-          format: int64
-          example: 1522067881
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         startDate:
-          type: integer
-          format: int64
-          example: 1522067882
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         endDate:
-          type: integer
-          format: int64
-          example: 1522067883
+          type: string
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
         processId:
           type: string
           example: 15c61933-0b06-442c-8bab-723b2b41f570
@@ -1756,4 +1756,5 @@ components:
         timestamp:
           description: Error timestamp.
           type: string
-          example: 1522067885
+          format: date-time
+          example: "2017-07-21T17:32:28Z"
