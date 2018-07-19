@@ -486,6 +486,115 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
 
+  #
+  # Process icon
+  #
+  /icon:
+    servers:
+      - url: '/{customPath}'
+        variables:
+          customPath:
+            default: ''
+    get:
+      tags:
+        - optional
+      summary: Process icon
+      description: 
+        Process icon.
+      operationId: icon
+      responses:
+        '200':
+          description: Process icon.
+          content:
+            image/jpeg:
+              schema:
+                type: string
+                format: binary
+            image/png:
+              schema:
+                type: string
+                format: binary
+        '500':
+          description: Internal error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  #
+  # Process license
+  #
+  /license:
+    servers:
+      - url: '/{customPath}'
+        variables:
+          customPath:
+            default: ''
+    get:
+      tags:
+        - optional
+      summary: Process license
+      description: 
+        Process license.
+      operationId: license
+      responses:
+        '200':
+          description: Process license.
+          content:
+            text/plain:
+              schema:
+                type: string
+            text/html:
+              schema:
+                type: string
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        '500':
+          description: Internal error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  #
+  # Process documentation
+  #
+  /documentation:
+    servers:
+      - url: '/{customPath}'
+        variables:
+          customPath:
+            default: ''
+    get:
+      tags:
+        - optional
+      summary: Process documentation
+      description: 
+        Process documentation.
+      operationId: documentation
+      responses:
+        '200':
+          description: Process documentation.
+          content:
+            text/plain:
+              schema:
+                type: string
+            text/html:
+              schema:
+                type: string
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        '500':
+          description: Internal error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
 #
 # Components
 #
