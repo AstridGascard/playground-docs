@@ -661,8 +661,11 @@ components:
         - ram
       properties:
         cpu:
-          description: Number of CPU cores.
-          type: integer
+          description: |
+            Number of CPU cores/vCores/hyperthreads.
+            Fractional requests are allowed. 0.5 requests for half of one CPU.
+            The expression 0.1 is equivalent to the expression 100m, which can be read as “one hundred millicpu”.
+          type: string
           example: 2
         cpuArch:
           description: CPU architecture, the default value is amd64.
@@ -677,9 +680,13 @@ components:
           description: Number of GPU cores.
           type: integer
           example: 0
-        ram:
-          description: Size of RAM (bytes).
-          type: integer
+        memory:
+          description: |
+            Memory requirements are expressed in bytes as a plain integer
+            or as a fixed-point integer using one of these suffixes: E, P, T, G, M, K.
+            You can also use the power-of-two equivalents: Ei, Pi, Ti, Gi, Mi, Ki.
+            For example, the following represent roughly the same value: 128974848, 129e6, 129M, 123Mi
+          type: string
           example: 2097152 # 2 Gb
 
     #
