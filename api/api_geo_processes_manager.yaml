@@ -18,7 +18,16 @@ info:
     or delegated to the process manager which is also specific to the geo process
     manager implementation. Workflow implementation is not covered by this API.
 
-    Processes have to implement the "Geo Process" API specification.
+    If an implementation has the concept of workspace/project/context, this is not
+    directly managed by this API. It may be taken into account by adding properties
+    to the job execution input.
+
+    Results can be retrieved using another API. The job provides two optional links
+    that allows the client to:
+    - retrieve the full result of the job processing according to process output description,
+    - get a result catalog that provides links to navigate in the process output chunks
+
+    Processes have to implement the "Geo Process API" specification.
   contact:
     name: Airbus Defence and Space
     url: 'https://www.airbus.com/'
