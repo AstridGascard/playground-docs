@@ -858,6 +858,18 @@ components:
       bearerFormat: JWT
 
   #
+  # Responses
+  #
+  responses:
+    OutputResponse:
+      description: |
+        Process output as defined in the output attribute of the description resource.
+    
+    ResultCatalog:
+      description: |
+        Extension to the GeoJSON schema.
+
+  #
   # Schemas
   #
   schemas:
@@ -1702,6 +1714,12 @@ components:
         delete:
           description: DELETE ressource to delete this job.
           $ref: '#/components/schemas/Reference'
+        result:
+          description: GET process result as described by the process description.
+          $ref: '#/components/responses/OutputResponse'
+        resultCatalog:
+          description: GET result catalog.
+          $ref: '#/components/responses/ResultCatalog'
 
     #
     # Reference schema
