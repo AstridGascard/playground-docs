@@ -180,7 +180,7 @@ paths:
   #
   '/jobs/{jobId}':
     servers:
-      - url: '/{customPath}'
+      - url: '/{customPath}/jobs/{jobId}'
         variables:
           customPath:
             default: ''
@@ -208,7 +208,7 @@ paths:
   #
   '/jobs/{jobId}/status':
     servers:
-      - url: '/{customPath}'
+      - url: '/{customPath}/jobs/{jobId}/status'
         variables:
           customPath:
             default: ''
@@ -246,7 +246,7 @@ paths:
   #
   '/jobs/{jobId}/results':
     servers:
-      - url: '/{customPath}'
+      - url: '/{customPath}/jobs/{jobId}/results'
         variables:
           customPath:
             default: ''
@@ -298,7 +298,7 @@ paths:
   #
   '/jobs/{jobId}/results/{resultId}':
     servers:
-      - url: '/{customPath}'
+      - url: '/{customPath}/jobs/{jobId}/results/{resultId}'
         variables:
           customPath:
             default: ''
