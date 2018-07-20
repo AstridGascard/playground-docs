@@ -77,7 +77,7 @@ paths:
         Subset of this API with implemented services.
       responses:
         '200':
-          description: Process Open API web UI.
+          description: Geo Process API.
 
   #
   # Describe
