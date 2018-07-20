@@ -1313,9 +1313,11 @@ components:
           example: "2017-07-21T17:32:28Z"
         processId:
           type: string
+          format: uuid
           example: 15c61933-0b06-442c-8bab-723b2b41f570
         id:
           type: string
+          format: uuid
           example: bb4358f0-30f2-11e8-b467-0ed5f89f718b
         nbTasks:
           type: integer
@@ -1352,6 +1354,7 @@ components:
           example: "2017-07-21T17:32:28Z"
         processId:
           type: string
+          format: uuid
           example: 15c61933-0b06-442c-8bab-723b2b41f570
         id:
           type: string
@@ -1462,6 +1465,7 @@ components:
           example: "2017-07-21T17:32:28Z"
         processId:
           type: string
+          format: uuid
           example: 15c61933-0b06-442c-8bab-723b2b41f570
         jobId:
           type: string
@@ -1488,7 +1492,7 @@ components:
             additionalProperties:
               type: string
         _links:
-          $ref: '#/components/schemas/NavLinks'
+          $ref: '#/components/schemas/ItemLinks'
 
     #
     # TaskSummary schema
@@ -1515,6 +1519,7 @@ components:
           example: "2017-07-21T17:32:28Z"
         processId:
           type: string
+          format: uuid
           example: 15c61933-0b06-442c-8bab-723b2b41f570
         jobId:
           type: string
@@ -1527,7 +1532,7 @@ components:
         status:
           $ref: '#/components/schemas/Status'
         _links:
-          $ref: '#/components/schemas/NavLinks'
+          $ref: '#/components/schemas/ItemLinks'
 
     #
     # Status schema
